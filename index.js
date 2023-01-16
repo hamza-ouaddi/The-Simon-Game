@@ -46,7 +46,7 @@ function nextSequence() {
 
 //Function to play sounds
 function playSound(name) {
-  var audio = new Audio("/The simon game/sounds/" + name + ".mp3");
+  var audio = new Audio("/The-Simon-Game/sounds/" + name + ".mp3");
   audio.play();
 }
 
@@ -69,7 +69,7 @@ function checkAnswer(activeColor) {
       }, 1000);
     }
   } else {
-    var gameOverAudio = new Audio("/The simon game/sounds/wrong.mp3");
+    var gameOverAudio = new Audio("/The-Simon-Game/sounds/wrong.mp3");
     gameOverAudio.play();
     $("body").addClass("game-over");
     setTimeout(function () {
